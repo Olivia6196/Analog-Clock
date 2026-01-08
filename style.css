@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background-image: url(./images/background\ image.jpg);
+    background-position: center;
+    background-size: 50vw;
+    background-repeat: no-repeat;
+}
+.clock-board{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 0.7vw solid black;
+    position: relative;
+    left: 40vw;
+    top: 4vw;
+}
+
+.dot{
+    width: 0.2vw;
+    height: 0.2vw;
+    border-radius: 50%;
+    border: 0.5vw solid black;
+    position: absolute;
+    right: 8.2vw;
+    top: 8.9vw;
+    box-shadow: 0 0 3px;
+}
+.number{
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+}
+.number-12{
+    right: 7.6vw;
+    top: 0.5vw;
+}
+.number-6{
+    right: 8.3vw;
+    top: 15.5vw;
+}
+.number-3{
+    right: 1vw;
+    top: 8.5vw;
+}
+.number-9{
+    left: 1vw;
+    top: 8.5vw;
+}
+.number-1{
+    right: 3.8vw;
+    top: 1.4vw;
+}
+.number-2{
+    right: 1.8vw;
+    top: 5vw;
+}
+.number-11{
+   left: 3.8vw;
+    top: 1.4vw;
+}
+.number-10{
+   left: 1.4vw;
+    top: 5vw;
+}
+.number-4{
+   right: 1.7vw;
+    top: 12vw;
+}
+.number-5{
+   right: 4vw;
+    top: 14.5vw;
+}
+.number-8{
+   left: 1.7vw;
+    top: 12vw;
+}
+.number-7{
+   left: 4.5vw;
+    top: 15vw;
+}
+.hand.hour{
+
+}
