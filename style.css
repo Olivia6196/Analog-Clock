@@ -14,75 +14,117 @@ body{
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    border: 0.7vw solid black;
+    border: 0.7vw solid #030458;
     position: relative;
     left: 40vw;
     top: 4vw;
+    box-shadow: inset 4px -4px 6px #f1e324,
+                inset  -4px 4px 6px #2427f1;
 }
 
-.dot{
+.center-dot{
     width: 0.2vw;
     height: 0.2vw;
     border-radius: 50%;
     border: 0.5vw solid black;
     position: absolute;
-    right: 8.2vw;
+    right: 8.4vw;
     top: 8.9vw;
     box-shadow: 0 0 3px;
 }
-.number{
-    font-size: 2rem;
+.numbers{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
+    transform: rotate(90deg);
+    
 }
-.number-12{
-    right: 7.6vw;
-    top: 0.5vw;
+.number{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transform: rotate(calc(var(--1) * 30deg));
+    padding: 1.4vw;
 }
-.number-6{
-    right: 8.3vw;
-    top: 15.5vw;
+.number span{
+    transform: rotate(calc(var(--1) * -30deg - 90deg));
 }
-.number-3{
-    right: 1vw;
-    top: 8.5vw;
+.sides-dot{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transform: rotate(calc(var(--y) * 6deg));
+    padding: 0.3vw;
 }
-.number-9{
-    left: 1vw;
-    top: 8.5vw;
+.sides-dot::before{
+    content: "";
+    width: 0.4vw;
+    height: 0.4vw;
+    background-color: #050505;
+    border-radius: 50%;
 }
-.number-1{
-    right: 3.8vw;
-    top: 1.4vw;
+.hand-wrapper{
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+    border-radius: 50%;
 }
-.number-2{
-    right: 1.8vw;
-    top: 5vw;
+.minute-hand{
+    position: relative;
 }
-.number-11{
-   left: 3.8vw;
-    top: 1.4vw;
+.minute-hand .hand{
+    width: 0.2vw;
+    height: 8vw;
+    background-color: #080808;
+    position: absolute;
+    left: 6.7vw;
+    top: -0.2vw;
 }
-.number-10{
-   left: 1.4vw;
-    top: 5vw;
+.minute-hand .arrow{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #050505;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 6.3vw;
+    top: -0.7vw;
 }
-.number-4{
-   right: 1.7vw;
-    top: 12vw;
+.hour-hand{
+    position: relative;
 }
-.number-5{
-   right: 4vw;
-    top: 14.5vw;
+.hour-hand .hand{
+    width: 0.4vw;
+    height: 5.5vw;
+    background-color: #ce4848;
+    position: absolute;
+    left: 6.7vw;
+    top: 2.28vw;
 }
-.number-8{
-   left: 1.7vw;
-    top: 12vw;
+.hour-hand .arrow{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #df4545;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 6.37vw;
+    top: 1.3vw;
 }
-.number-7{
-   left: 4.5vw;
-    top: 15vw;
+.seconds-hand{
+    position: relative;
 }
-.hand.hour{
-
+.seconds-hand .hand{
+    width: 0.13vw;
+    height: 10vw;
+    background-color: #2bf124;
+    position: absolute;
+    left: 6.7vw;
+    top: -2.2vw;
 }
